@@ -1,0 +1,181 @@
+seabluestyle.css
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #06283D; /* Dark sea blue */
+  color: #F5F5F5;
+  line-height: 1.6;
+}
+
+
+header {
+  background-color: #011C36;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  color: #47B5FF;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav a {
+  color: #F5F5F5;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #47B5FF;
+}
+
+
+#hero{
+  background-color: #011C36;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+#hero h2 {
+  font-size: 2.5rem;
+  color: #47B5FF;
+  margin-bottom: 1rem;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  color: #F5F5F5;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: #1363DF;
+  color: #F5F5F5;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #47B5FF;
+}
+
+section h2 {
+  color: #47B5FF;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+#about {
+  padding: 3rem 2rem;
+  background-color: #06283D;
+}
+
+
+#skills {
+  padding: 3rem 2rem;
+  background-color: #011C36;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.skills-grid div {
+  background-color: #1B3C73;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.skills-grid div:hover {
+  transform: scale(1.05);
+}
+
+.skills-grid img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+}
+
+
+#projects {
+  padding: 3rem 2rem;
+  background-color: #06283D;
+}
+
+.project-card {
+  background-color: #1B3C73;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  color: #F5F5F5;
+  animation: fadeIn 1s ease-in;
+}
+
+
+#contact {
+  padding: 3rem 2rem;
+  background-color: #011C36;
+}
+
+#contact a {
+  color: #F5F5F5;
+  text-decoration: underline;
+}
+
+#contact a:hover {
+  color: #47B5FF;
+}
+
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1363DF;
+  color: #F5F5F5;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+}
+
+
+
+
+
+
+
+
